@@ -27,19 +27,20 @@ class Main{
     }
     public static void main(String[] args)
     {
-        int[] arr = {1, 5, 12, 6};
+        int[] arr = {2,2,2,2,3,4,5};
         int sum = 0;
         for(int i : arr)
         {
             sum+=i;
         }
-        if (sum%2!=0)
+        int k = 4;
+        if (sum%k!=0)
         {
             System.out.println("False");
             return;
         }
         else{
-            System.out.println(subsetSumDP(arr, sum/2)==true ? "True" : "False");
+            System.out.println(subsetSumDP(arr, sum/k)==true ? "True" : "False");
             return;
         }
 
